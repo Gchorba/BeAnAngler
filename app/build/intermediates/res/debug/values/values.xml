@@ -3,10 +3,16 @@
     <!-- From: file:/C:/Users/Gene/Desktop/Githubs/HackFishackathon/Angler-master/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Angler</string>
-    <string name="content_explore_rangeley">Explore Rangeley</string>
-    <string name="content_fish">Fish</string>
-    <string name="content_lakes">Lakes</string>
-    <string name="content_what_is">About Angler</string>
+    <string name="content_explore_rangeley">Fish App</string>
+    <string name="content_fish">Browse All Fish</string>
+    <string name="content_id">Start ID</string>
+    <string name="content_laws">Laws and Regulations</string>
+    <string name="content_limits">Fish Limits</string>
+    <string name="content_location">Lake Lanier</string>
+    <string name="content_practices">Unlawful Practices</string>
+    <string name="content_report">Report</string>
+    <string name="content_season">Season</string>
+    <string name="content_what_is">About Fish App</string>
     <string name="title_item_detail">Item Detail</string>
     <!-- From: file:/C:/Users/Gene/Desktop/Githubs/HackFishackathon/Angler-master/app/src/main/res/values/styles.xml -->
     <eat-comment/>

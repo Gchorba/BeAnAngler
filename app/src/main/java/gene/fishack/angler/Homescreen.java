@@ -35,10 +35,43 @@ public class Homescreen extends Activity{
 		startActivity(launchFragment);
 	}
 	public void onClickCaught(View v) {
-		Intent launchFragment = new Intent();
-		launchFragment.setClass(getApplicationContext(), CaughtFishActivity.class);
-		launchFragment.putExtra("fragmentType", "fish");
-		startActivity(launchFragment);
+//		Intent launchFragment = new Intent();
+//		launchFragment.setClass(getApplicationContext(), CaughtFishActivity.class);
+//		launchFragment.putExtra("fragmentType", "fish");
+//		startActivity(launchFragment);
+		//Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+		//detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, "1 fish" + "");
+
+		//startActivity(detailIntent);
+		Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+		detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, 1 + " " + "fish");
+		this.startActivity(detailIntent);
+	}
+	public void onClickBassSpotted(View v) {
+//		Intent launchFragment = new Intent();
+//		launchFragment.setClass(getApplicationContext(), CaughtFishActivity.class);
+//		launchFragment.putExtra("fragmentType", "fish");
+//		startActivity(launchFragment);
+		//Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+		//detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, "1 fish" + "");
+
+		//startActivity(detailIntent);
+		Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+		detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, 17 + " " + "fish");
+		this.startActivity(detailIntent);
+	}
+	public void onClickCrappieBlack(View v) {
+//		Intent launchFragment = new Intent();
+//		launchFragment.setClass(getApplicationContext(), CaughtFishActivity.class);
+//		launchFragment.putExtra("fragmentType", "fish");
+//		startActivity(launchFragment);
+		//Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+		//detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, "1 fish" + "");
+
+		//startActivity(detailIntent);
+		Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+		detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, 2 + " " + "fish");
+		this.startActivity(detailIntent);
 	}
 	public void onClickLawsAndRegs(View v) {
 		if (isNetworkAvailable()) {

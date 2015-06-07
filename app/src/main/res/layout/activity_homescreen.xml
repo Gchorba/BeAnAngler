@@ -1,175 +1,285 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradient">
-    	
-		<TextView
-		    android:id="@+id/text_explore"
-		    android:layout_centerHorizontal="true"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content" 
-		    android:text="@string/content_explore_rangeley"
-		    android:fontFamily="sans-serif-light"
-		    android:textColor="#ffffff"
-		    android:textSize="38sp"
-		    android:textStyle="italic"
-		    android:paddingRight="12sp"
-		    android:paddingLeft="12sp"
-		    android:paddingBottom="12sp"
-		    android:paddingTop="9sp"
-		    android:shadowColor="#000000"
-		    android:shadowDx="0"
-		    android:shadowDy="0"
-		    android:shadowRadius="1"/>
-		
-		
-    	
-		<LinearLayout
-		    android:id="@+id/explore_buttons_layout"
-		    android:layout_below="@id/text_explore"
-			android:layout_width="wrap_content"
-			android:layout_height="300sp"
-			android:orientation="horizontal"
-			android:weightSum="1.0"
-			android:layout_centerHorizontal="true">
-		    
-		    <RelativeLayout
-			    android:id="@+id/lake_button_layout"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="onClickLakesButton"
-				android:background="#55dddddd"
-				android:layout_weight=".5"
-				android:layout_marginTop="10sp"
-				android:layout_marginBottom="10sp"
-				android:layout_marginRight="5sp"
-				android:layout_marginLeft="10sp">
-		        
-		        
-		          <TextView
-			        android:id="@+id/text_lakes"
-			        android:text="By Lakes"
-			        android:layout_width="wrap_content"
-				    android:layout_height="wrap_content"
-				    android:layout_margin="6sp"
-				    android:onClick="onClickLakesButton"
-				    android:paddingRight="6sp"
-				    android:paddingLeft="6sp"
-				    android:layout_centerHorizontal="true"
-				    android:textSize="25sp"
-				    android:textColor="#ffffff"
-				    android:shadowColor="#000000"
-				    android:shadowDx="0"
-				    android:shadowDy="0"
-				    android:shadowRadius="1"/>
-		        
-		        <ImageView
-		            android:id="@+id/iv_lake_button" 
-		            android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_below="@id/text_lakes"
-					android:src="@drawable/button_lake"
-					android:layout_centerHorizontal="true"
-					android:paddingLeft="10sp"
-					android:paddingRight="10sp"/>
-		        
-			</RelativeLayout>
-			    
-			<RelativeLayout
-			    android:id="@+id/layout_fish_button"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="onClickFishButton"
-				android:background="#55dddddd"
-				android:layout_weight=".5"
-				android:layout_marginTop="10sp"
-				android:layout_marginBottom="10sp"
-				android:layout_marginRight="10sp"
-				android:layout_marginLeft="5sp">
-		        
-			    <TextView
-			        android:id="@+id/text_fish"
-			        android:text="By Fish"
-			        android:layout_width="wrap_content"
-				    android:layout_height="wrap_content"
-				    android:layout_margin="6sp"
-				    android:onClick="onClickLakesButton"
-				    android:paddingRight="6sp"
-				    android:paddingLeft="6sp"
-				    android:layout_centerHorizontal="true"
-				    android:textSize="25sp"
-				    android:textColor="#ffffff"
-				    android:shadowColor="#000000"
-				    android:shadowDx="0"
-				    android:shadowDy="0"
-				    android:shadowRadius="1"/>
-			    
-		        <ImageView
-		            android:id="@+id/iv_fish_button" 
-		            android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_below="@id/text_fish"
-					android:src="@drawable/button_fish"
-					android:layout_centerHorizontal="true"
-					android:paddingRight="10sp"
-					android:paddingLeft="10sp"/>
-			
-			</RelativeLayout>
-		    
-		</LinearLayout>
-		
-		<Button
-		    android:id="@+id/laws_layout"
-		    android:onClick="onClickLawsAndRegs"
-		    android:layout_below="@+id/explore_buttons_layout"
-		    android:layout_height="wrap_content"
-		    android:layout_width="wrap_content"
-		    android:background="#55dddddd"
-		    android:layout_marginTop="10sp"
-		    android:text="Laws and Regulations"
-		    android:fontFamily="sans-serif-light"
-		    android:textColor="#ffffff"
-		    android:textSize="30sp"
-		    android:textStyle="italic"
-		    android:layout_centerHorizontal="true"
-		    android:paddingLeft="10sp"
-	    android:paddingRight="10sp"/>
-	
-    <Button
-        android:id="@+id/what_is"
-    	android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@id/laws_layout"
-		android:text="@string/content_what_is"
-		android:fontFamily="sans-serif-light"
-	    android:textColor="#ffffff"
-	    android:background="#55dddddd"
-	    android:textSize="30sp"
-	    android:textStyle="italic"
-	    android:paddingLeft="10sp"
-	    android:paddingRight="10sp"
-	    android:paddingBottom="5sp"
-	    android:layout_marginTop="10sp"
-	    android:onClick="onClickAbout"
-	    android:layout_centerHorizontal="true"/>
-	<Button
-		android:id="@+id/caught"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@id/what_is"
-		android:text="caught"
-		android:fontFamily="sans-serif-light"
-		android:textColor="#ffffff"
-		android:background="#55dddddd"
-		android:textSize="30sp"
-		android:textStyle="italic"
-		android:paddingLeft="10sp"
-		android:paddingRight="10sp"
-		android:paddingBottom="5sp"
-		android:layout_marginTop="10sp"
-		android:onClick="onClickCaught"
-		android:layout_centerHorizontal="true"/>
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/gradient">
 
-    	
+	<RelativeLayout
+		android:id="@+id/lake_button_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onClickLakesButton"
+		android:background="#666666"
+		android:layout_weight=".5"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true">
+
+
+		<TextView
+			android:id="@+id/text_lakes"
+			android:text="@string/content_location"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="6sp"
+			android:onClick="onClickLakesButton"
+			android:paddingRight="6sp"
+			android:paddingLeft="6sp"
+			android:textSize="20sp"
+			android:textColor="#ffffff"
+			android:shadowColor="#000000"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="1"
+			android:singleLine="false"
+			android:enabled="false"
+			android:layout_centerVertical="true" />
+
+		<ImageView
+			android:id="@+id/iv_lake_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/text_lakes"
+			android:layout_centerHorizontal="true"
+			android:paddingLeft="10sp"
+			android:paddingRight="10sp"/>
+
+	</RelativeLayout>
+
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="140dp"
+		android:layout_below="@+id/lake_button_layout"
+		android:id="@+id/frameLayout"
+		android:background="#FFFFFF"
+		android:alpha="0.8"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="5dp"
+		android:layout_alignParentEnd="false"
+		android:layout_alignParentStart="true">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView"
+			android:layout_gravity="center"
+			android:background="@drawable/crappie_black"
+			android:onClick="onClickCrappieBlack"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="140dp"
+		android:layout_below="@+id/frameLayout"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:background="#FFFFFF"
+		android:clickable="false"
+		android:alpha="0.8"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp" >
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView2"
+			android:layout_gravity="center"
+			android:background="@drawable/bass_spotted"
+			android:onClick="onClickBassSpotted"/>
+	</FrameLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:id="@+id/linearLayout"
+		android:layout_alignParentBottom="true">
+
+		<Button
+			android:id="@+id/caught"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="@string/content_report"
+			android:fontFamily="sans-serif-light"
+			android:textColor="#ffffff"
+			android:background="#55dddddd"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:paddingLeft="10sp"
+			android:paddingRight="10sp"
+			android:paddingBottom="5sp"
+			android:onClick="onClickCaught"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center_horizontal" />
+		<!-- android:layout_below="@id/what_is" -->
+
+		<Button
+			android:id="@+id/text_fish"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/content_fish"
+			android:fontFamily="sans-serif-light"
+			android:textColor="#ffffff"
+			android:background="#55dddddd"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:paddingLeft="10sp"
+			android:paddingRight="10sp"
+			android:paddingBottom="5sp"
+			android:layout_marginTop="10sp"
+			android:onClick="onClickFishButton"
+			android:layout_gravity="center_horizontal" />
+
+		<Button
+			android:id="@+id/laws_layout"
+			android:onClick="onClickLawsAndRegs"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/explore_buttons_layout"
+			android:layout_width="match_parent"
+			android:background="#55dddddd"
+			android:layout_marginTop="10sp"
+			android:text="@string/content_laws"
+			android:fontFamily="sans-serif-light"
+			android:textColor="#ffffff"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:layout_centerHorizontal="true"
+			android:paddingLeft="10sp"
+			android:paddingRight="10sp"
+			android:layout_gravity="center_horizontal" />
+
+		<!-- <RelativeLayout
+            android:id="@+id/layout_fish_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="onClickFishButton"
+            android:background="#55dddddd"
+                android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+             android:layout_gravity="center_horizontal"
+             > -->
+
+		<!-- <TextView
+                android:id="@+id/text_fish"
+                android:text="@string/content_fish"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="onClickLakesButton"
+                android:paddingRight="6sp"
+                android:paddingLeft="10sp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+             android:layout_gravity="center_horizontal" /> -->
+
+		<!-- <ImageView
+                android:id="@+id/iv_fish_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_fish"
+
+                    android:layout_centerHorizontal="true"
+                    android:paddingRight="10sp"
+                    android:paddingLeft="10sp"/> -->
+		<!-- android:src="@drawable/button_fish" -->
+		<!-- </RelativeLayout> -->
+
+		<!-- <RelativeLayout
+        android:id="@+id/layout_limits_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="onClickLakesButton"
+        android:background="#55dddddd"
+                android:layout_gravity="top"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_centerHorizontal="true">
+
+        <TextView
+        android:id="@+id/textView"
+        android:text="@string/content_limits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLimitsButton"
+        android:paddingRight="6sp"
+        android:paddingLeft="6sp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp" />
+        </RelativeLayout> -->
+	</LinearLayout>
+
+	<!--   <LinearLayout
+
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/"
+           android:layout_below="@+id/explore_buttons_layout">
+
+           <LinearLayout
+                   android:id="@+id/explore_buttons_layout"
+                   android:layout_below="@id/text_explore"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="1.0"
+                   android:layout_centerHorizontal="true"><![CDATA[
+
+                   -->
+
+
+
+
+	<!--
+               ]]> --> <!-- </LinearLayout> -->
+	<!-- </LinearLayout> -->
+
+	<!-- <TextView
+              android:id="@+id/text_explore"
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/content_explore_rangeley"
+              android:fontFamily="sans-serif-light"
+              android:textColor="#ffffff"
+              android:textSize="38sp"
+              android:textStyle="italic"
+              android:paddingRight="12sp"
+              android:paddingLeft="12sp"
+              android:paddingBottom="12sp"
+              android:paddingTop="9sp"
+              android:shadowColor="#000000"
+              android:shadowDx="0"
+              android:shadowDy="0"
+              android:shadowRadius="1"/> -->
+
+
 </RelativeLayout>
