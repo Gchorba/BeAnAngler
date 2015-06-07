@@ -27,6 +27,7 @@ public class CaughtFishActivity extends Activity {
             public void onClick(View v) {
                 Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent, CAMERA_REQUEST);
+
             }
         });
     }
@@ -35,6 +36,8 @@ public class CaughtFishActivity extends Activity {
         if (requestCode == CAMERA_REQUEST && resultCode == RESULT_OK) {
             Bitmap photo = (Bitmap) data.getExtras().get("data");
             imageView.setImageBitmap(photo);
+            imageView.setMaxHeight(100);
+            imageView.setMaxWidth(100);
         }
     }
 }

@@ -175,7 +175,7 @@ public class ItemDetailFragment extends Fragment {
 						
 			            
 			            //Fish Fragment
-			            ItemDetailFragment fragment = new ItemDetailFragment(); 
+			            ItemDetailFragment fragment = new ItemDetailFragment();
 			            Bundle newFishFragArguments = new Bundle();
 			            newFishFragArguments.putString(ItemDetailFragment.ARG_ITEM_ID, getDbId + " " + "fish");
 			            fragment.setArguments(newFishFragArguments);

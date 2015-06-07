@@ -1,175 +1,196 @@
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
-<RelativeLayout 
-    android:id="@+id/lake_detail_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#fefbfe"
-    tools:context=".ItemDetailFragment">
-    
-    <LinearLayout
-        android:id="@+id/lake_detail_picture_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10sp"
-        android:layout_marginLeft="1sp"
-        android:layout_marginRight="1sp"
-        android:layout_marginTop="1sp"
-        android:background="#000000">
-        
-        <ImageView
-            android:id="@+id/lake_detail_picture"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content"
-            android:layout_margin="2sp"
-            android:layout_weight="0.34"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter" />
-        
-    </LinearLayout>
-    
-    <TextView
-    	android:id="@+id/features"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FEATURES"
-        android:layout_below="@id/lake_detail_picture_container"
-        android:fontFamily="sans-serif-light"
-	    android:textSize="20sp"
-	    android:layout_marginLeft="25sp"/>
-    	
-    <LinearLayout
-        android:id="@+id/features_bar"
-      	android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="2sp"
-        android:background="#0099cc"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_below="@id/features"/>
-    
-    <LinearLayout
-        android:id="@+id/feature_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/features_bar"
-        android:orientation="vertical">
-    
-	    <RelativeLayout 
-		    android:id="@+id/boat_feature_container"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:paddingTop="15sp"
-		    android:paddingBottom="10sp">
-		    	
-			    <ImageView
-			        android:id="@+id/boat_feature_icon"
-			    	android:layout_width="wrap_content"
-			    	android:layout_height="wrap_content"
-			    	android:src="@drawable/ic_feature_boatlaunch"
-			    	android:paddingRight="10sp"
-			    	android:paddingLeft="20sp"/>
-			    
-		    <TextView
-				android:id="@+id/boat_feature_text"
-		    	android:layout_width="wrap_content"
-		    	android:layout_height="wrap_content"
-		    	android:textSize="20sp"
-		    	android:fontFamily="sans-serif-light"
-		    	android:textStyle="bold"
-		    	android:layout_centerVertical="true"
-		    	android:layout_toRightOf="@id/boat_feature_icon"/>
-		    	
-		</RelativeLayout>	
-		
-	    <RelativeLayout 
-		    android:id="@+id/lure_feature_container"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:paddingTop="10sp"
-		    android:paddingBottom="10sp">
-		    	
-			    <ImageView
-			        android:id="@+id/lure_feature_icon"
-			    	android:layout_width="wrap_content"
-			    	android:layout_height="wrap_content"
-			    	android:src="@drawable/ic_feature_lure"
-			    	android:paddingRight="10sp"
-			    	android:paddingLeft="20sp"/>
-			    
-		    <TextView
-				android:id="@+id/lure_feature_text"
-		    	android:layout_width="wrap_content"
-		    	android:layout_height="wrap_content"
-		    	android:textSize="20sp"
-		    	android:fontFamily="sans-serif-light"
-		    	android:textStyle="bold"
-		    	android:layout_centerVertical="true"
-		    	android:layout_toRightOf="@id/lure_feature_icon"/>
-		    	
-		</RelativeLayout>	
-		
-	    <RelativeLayout 
-		    android:id="@+id/icefishing_feature_container"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:paddingTop="10sp"
-		    android:paddingBottom="10sp">
-		    	
-			    <ImageView
-			        android:id="@+id/icefishing_feature_icon"
-			    	android:layout_width="wrap_content"
-			    	android:layout_height="wrap_content"
-			    	android:src="@drawable/ic_feature_icefishing"
-			    	android:paddingRight="10sp"
-			    	android:paddingLeft="20sp"/>
-			    
-		    <TextView
-				android:id="@+id/icefishing_feature_text"
-		    	android:layout_width="wrap_content"
-		    	android:layout_height="wrap_content"
-		    	android:textSize="20sp"
-		    	android:fontFamily="sans-serif-light"
-		    	android:textStyle="bold"
-		    	android:layout_centerVertical="true"
-		    	android:layout_toRightOf="@id/icefishing_feature_icon"/>
-		    	
-		</RelativeLayout>	
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 
-	</LinearLayout>
-	
-    <TextView
-    	android:id="@+id/fish_in_lake_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FISH"
-        android:layout_below="@id/feature_container"
-        android:fontFamily="sans-serif-light"
-	    android:textSize="20sp"
-	    android:layout_marginTop="25sp"
-	    android:layout_marginLeft="25sp"/>
-    	
-    <LinearLayout
-        android:id="@+id/fish_bar"
-      	android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="2sp"
-        android:background="#0099cc"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_below="@id/fish_in_lake_text"/>
-    <LinearLayout
-        android:id="@+id/list_fish_layout"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
-    	android:layout_below="@id/fish_bar"
-    	android:paddingBottom="25sp"
-    	android:orientation="vertical"/>    
-</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/lake_detail_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#fefbfe"
+		tools:context=".ItemDetailFragment">
+
+		<LinearLayout
+			android:id="@+id/lake_detail_picture_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10sp"
+			android:layout_marginLeft="1sp"
+			android:layout_marginRight="1sp"
+			android:layout_marginTop="1sp"
+			android:background="#000000">
+
+			<ImageView
+				android:id="@+id/lake_detail_picture"
+				android:layout_width="0sp"
+				android:layout_height="wrap_content"
+				android:layout_margin="2sp"
+				android:layout_weight="0.34"
+				android:adjustViewBounds="true"
+				android:scaleType="fitCenter" />
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/features"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="FEATURES"
+			android:layout_below="@id/lake_detail_picture_container"
+			android:fontFamily="sans-serif-light"
+			android:textSize="20sp"
+			android:layout_marginLeft="20sp"/>
+
+		<LinearLayout
+			android:id="@+id/features_bar"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="2sp"
+			android:background="#0099cc"
+			android:layout_marginLeft="20sp"
+			android:layout_marginRight="20sp"
+			android:layout_below="@id/features"/>
+
+		<LinearLayout
+			android:id="@+id/feature_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/features_bar"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/season_feature_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:id="@+id/season_feature_icon"
+					android:layout_width="75dp"
+					android:layout_height="75dp"
+					android:src="@drawable/season"
+					android:paddingRight="10sp"
+					android:paddingLeft="20sp"
+					android:layout_alignParentRight="false"
+					android:layout_alignParentLeft="false" />
+
+				<TextView
+					android:id="@+id/boat_feature_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="20sp"
+					android:fontFamily="sans-serif-light"
+					android:textStyle="bold"
+					android:layout_centerVertical="true"
+					android:layout_toRightOf="@id/season_feature_icon"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/laws_feature_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:id="@+id/laws_feature_icon"
+					android:layout_width="75dp"
+					android:layout_height="75dp"
+					android:src="@drawable/laws"
+					android:paddingRight="10sp"
+					android:paddingLeft="20sp"/>
+
+				<TextView
+					android:id="@+id/lure_feature_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="20sp"
+					android:fontFamily="sans-serif-light"
+					android:textStyle="bold"
+					android:layout_centerVertical="true"
+					android:layout_toRightOf="@id/laws_feature_icon"/>
+
+			</RelativeLayout>
+		<!--	<RelativeLayout
+				android:id="@+id/limits_feature_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:id="@+id/limits_feature_icon"
+					android:layout_width="75dp"
+					android:layout_height="75dp"
+					android:src="@drawable/limits"
+					android:paddingRight="10sp"
+					android:paddingLeft="20sp"/>
+
+				<TextView
+					android:id="@+id/limits_feature_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="20sp"
+					android:fontFamily="sans-serif-light"
+					android:textStyle="bold"
+					android:layout_centerVertical="true"
+					android:layout_toRightOf="@+id/limits_feature_icon"/>
+
+			</RelativeLayout> -->
+			 <RelativeLayout
+                        android:id="@+id/icefishing_feature_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="10sp">
+
+                            <ImageView
+                                android:id="@+id/icefishing_feature_icon"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/limits"
+                                android:paddingRight="10sp"
+                                android:paddingLeft="20sp"/>
+
+                        <TextView
+                            android:id="@+id/icefishing_feature_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="bold"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/icefishing_feature_icon"/>
+
+                    </RelativeLayout>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/fish_in_lake_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="FISH"
+			android:layout_below="@id/feature_container"
+			android:fontFamily="sans-serif-light"
+			android:textSize="20sp"
+			android:layout_marginTop="25sp"
+			android:layout_marginLeft="20sp"/>
+
+		<LinearLayout
+			android:id="@+id/fish_bar"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="2sp"
+			android:background="#0099cc"
+			android:layout_marginLeft="20sp"
+			android:layout_marginRight="20sp"
+			android:layout_below="@id/fish_in_lake_text"/>
+		<LinearLayout
+			android:id="@+id/list_fish_layout"
+			android:layout_marginLeft="20sp"
+			android:layout_marginRight="20sp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/fish_bar"
+			android:paddingBottom="25sp"
+			android:orientation="vertical"/>
+	</RelativeLayout>
 </ScrollView><!-- From: file:/C:/Users/Gene/Desktop/Githubs/HackFishackathon/Angler-master/app/src/main/res/layout/fragment_lake.xml -->

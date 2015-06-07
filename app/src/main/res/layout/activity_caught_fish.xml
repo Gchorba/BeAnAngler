@@ -3,22 +3,75 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:weightSum="1">
-    <Button android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="photo"></Button>
-    <ImageView android:id="@+id/imageView1" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_width="228dp"
-        android:layout_weight="0.53"></ImageView>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="time"
-        android:ems="10"
-        android:id="@+id/editText" />
-
+    android:weightSum="1"
+    android:baselineAligned="true"
+    android:background="@drawable/gradient">
     <Button
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button" />
+        android:text="Take Photo"
+        android:textColor="#ffffff"
+        android:background="#666666"
+        android:textSize="20sp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp">
+
+    </Button>
+    <ImageView android:id="@+id/imageView1"
+        android:layout_height="350dp"
+        android:src="@drawable/knowfish_grey"
+        android:layout_width="350dp"
+        android:layout_weight="0.53"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="false">
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Photo"
+            android:id="@+id/button"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ffffff"
+            android:background="#666666"
+            android:textSize="20sp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/button"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ffffff"
+            android:background="#666666"
+            android:textSize="20sp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
 
 </LinearLayout>

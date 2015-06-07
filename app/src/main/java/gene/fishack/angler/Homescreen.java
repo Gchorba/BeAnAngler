@@ -35,17 +35,14 @@ public class Homescreen extends Activity{
 		startActivity(launchFragment);
 	}
 	public void onClickCaught(View v) {
-//		Intent launchFragment = new Intent();
-//		launchFragment.setClass(getApplicationContext(), CaughtFishActivity.class);
-//		launchFragment.putExtra("fragmentType", "fish");
-//		startActivity(launchFragment);
-		//Intent detailIntent = new Intent(this, ItemDetailActivity.class);
-		//detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, "1 fish" + "");
+		Intent launchFragment = new Intent();
+		launchFragment.setClass(getApplicationContext(), CaughtFishActivity.class);
+		launchFragment.putExtra("fragmentType", "fish");
+		startActivity(launchFragment);
 
-		//startActivity(detailIntent);
-		Intent detailIntent = new Intent(this, ItemDetailActivity.class);
-		detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, 1 + " " + "fish");
-		this.startActivity(detailIntent);
+		//Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+		//detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, 1 + " " + "fish");
+		//this.startActivity(detailIntent);
 	}
 	public void onClickBassSpotted(View v) {
 //		Intent launchFragment = new Intent();
@@ -75,7 +72,7 @@ public class Homescreen extends Activity{
 	}
 	public void onClickLawsAndRegs(View v) {
 		if (isNetworkAvailable()) {
-			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eregulations.com/maine/fishing/"));
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.georgiawildlife.com/fishing/regulations"));
 			startActivity(browserIntent);
 		}
 		else {
