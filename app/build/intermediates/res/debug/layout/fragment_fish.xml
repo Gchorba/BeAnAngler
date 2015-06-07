@@ -1,0 +1,90 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout 
+    android:id="@+id/fish_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fefbfe"
+    tools:context=".ItemDetailFragment">
+    
+    <LinearLayout
+        android:id="@+id/fish_detail_picture_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip" >
+        <ImageView
+            android:id="@+id/fish_detail_picture"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.34"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+    
+
+    
+    <TextView
+    	android:id="@+id/species_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPECIES INFORMATION"
+        android:layout_below="@id/fish_detail_picture_container"
+        android:fontFamily="sans-serif-light"
+	    android:textSize="20sp"
+	    android:layout_marginLeft="25sp"/>
+    
+    <LinearLayout
+        android:id="@+id/species_info_bar"
+      	android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="#0099cc"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_below="@id/species_info_title"/>
+    
+    <LinearLayout 
+        android:id="@+id/species_information_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/species_info_bar"
+        android:paddingTop="20sp"/>
+    
+     <TextView
+    	android:id="@+id/can_be_found_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAN BE FOUND IN"
+        android:layout_below="@id/species_information_layout"
+        android:fontFamily="sans-serif-light"
+	    android:textSize="20sp"
+	    android:layout_marginTop="25sp"
+	    android:layout_marginLeft="25sp"/>
+    	
+    <LinearLayout
+        android:id="@+id/lake_bar"
+      	android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="#0099cc"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_below="@id/can_be_found_text"/>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/can_be_found_list"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/lake_bar"
+    	android:paddingBottom="25sp"/>
+    
+</RelativeLayout>
+</ScrollView><!-- From: file:/C:/Users/Gene/Desktop/Githubs/HackFishackathon/Angler-master/app/src/main/res/layout/fragment_fish.xml -->

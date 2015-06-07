@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Angler</string>
+    <string name="title_item_detail">Item Detail</string>
+
+	<string name="content_explore_rangeley">Explore Rangeley</string>
+	<string name="content_lakes">Lakes</string>
+	<string name="content_fish">Fish</string>
+	<string name="content_what_is">About Angler</string>
+	    
+</resources>

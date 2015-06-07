@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gene.fishack.angler"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/angler_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+        <activity
+            android:name="gene.fishack.angler.Homescreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="gene.fishack.angler.ItemListActivity"
+            android:label="@string/app_name" 
+            android:parentActivityName="gene.fishack.angler.Homescreen">
+        </activity>
+        <activity
+            android:name="gene.fishack.angler.ItemListActivityGing"
+            android:label="@string/app_name" 
+            android:parentActivityName="gene.fishack.angler.Homescreen">
+        </activity>
+        <activity
+            android:name="gene.fishack.angler.CaughtFishActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="gene.fishack.angler.Homescreen">
+        </activity>
+        <activity
+            android:name="gene.fishack.angler.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName="gene.fishack.angler.ItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gene.fishack.angler.ItemListActivity" />
+        </activity>
+        
+    </application>
+
+</manifest>
