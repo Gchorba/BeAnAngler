@@ -14,6 +14,16 @@
 	<string name="content_season">Season</string>
 	<string name="content_report">Report</string>
 	<string name="content_laws">Laws and Regulations</string>
+	<string-array name="items">
+		<item>Notifications</item>
+		<item>Laws and Regulations</item>
+		<item>Fish List</item>
+		<item>All Locations</item>
+		<item>Download Libraries</item>
 
+	</string-array>
+
+	<string name="drawer_open">Open navigation drawer</string>
+	<string name="drawer_close">Close navigation drawer</string>
 
 </resources>
