@@ -93,6 +93,8 @@ public class Homescreen extends Activity{
 		@Override
 		public void onItemClick(AdapterView parent, View view, int position, long id) {
 			Toast.makeText(Homescreen.this, ((TextView) view).getText(), Toast.LENGTH_LONG).show();
+
+			onClickLakesButton(view);
 			drawerLayout.closeDrawer(drawerListView);
 
 		}
@@ -168,22 +170,22 @@ public class Homescreen extends Activity{
 		}
 	}
 	
-	public void onClickAbout(View v) {
-		((Button) findViewById(R.id.what_is)).setBackgroundColor(Color.parseColor("#33b5e5"));
-		
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		// Add the buttons
-		builder.setPositiveButton("Got It!", new DialogInterface.OnClickListener() {
-		           public void onClick(DialogInterface dialog, int id) {
-		               // User clicked OK button
-		           }
-		       });
-		// Create the AlertDialog
-		builder.setTitle("About Angler");
-		builder.setMessage("Angler");
-		AlertDialog dialog = builder.create();
-		dialog.show();
-	}
+//	public void onClickAbout(View v) {
+//	//	((Button) findViewById(R.id.what_is)).setBackgroundColor(Color.parseColor("#33b5e5"));
+//
+//		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//		// Add the buttons
+//		builder.setPositiveButton("Got It!", new DialogInterface.OnClickListener() {
+//		           public void onClick(DialogInterface dialog, int id) {
+//		               // User clicked OK button
+//		           }
+//		       });
+//		// Create the AlertDialog
+//		builder.setTitle("About Angler");
+//		builder.setMessage("Angler");
+//		AlertDialog dialog = builder.create();
+//		dialog.show();
+//	}
 	
 	private boolean isNetworkAvailable() {
 	    ConnectivityManager connectivityManager 
