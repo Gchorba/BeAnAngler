@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "maine.epscor.angler"
+        applicationId "gene.fishack.knowfish"
         minSdkVersion 8
         targetSdkVersion 17
     }
